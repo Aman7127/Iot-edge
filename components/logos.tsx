@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const Logos = () => {
     return (
-        <div style={{ marginBottom: 40 ,marginTop:20}} className="mx-auto px-4 sm:px-6 py-8 bg-transparent flex justify-center w-full">
+        <div style={{ marginBottom: 40 ,marginTop:20}} className="mx-auto px-4 sm:px-6 py-8 bg-black flex justify-center w-full">
             <div className="container">
                 <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
                 <motion.div

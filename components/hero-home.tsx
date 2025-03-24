@@ -1,22 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import SnowParticles from "@/components/snowparticle";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import DASH from "@/public/images/dashmm.jpeg";
 import ParallaxTilt from 'react-parallax-tilt'; // Import the ParallaxTilt component
-import Typewriter from 'react-typewriter-effect'; // Import the Typewriter component
 import './HeroHome.css'; // Import the CSS file for styles
 
 export default function HeroHome() {
-  const [particlesVisible, setParticlesVisible] = useState(false);
   const [rotation, setRotation] = useState(0);
+  const [borderVisible, setBorderVisible] = useState(false); // State for border visibility
 
   useEffect(() => {
-    // Trigger particles visibility on component mount
-    setParticlesVisible(true);
-
     const handleScroll = () => {
       const scrollY = window.scrollY;
       // Adjust rotation based on scroll position
@@ -27,6 +22,15 @@ export default function HeroHome() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    // Set a timeout to show the border after the image is centered
+    const timer = setTimeout(() => {
+      setBorderVisible(true);
+    }, 1000); // Adjust the delay as needed
+
+    return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
   return (
@@ -57,23 +61,14 @@ export default function HeroHome() {
             >
               Connect, Collaborate and Integrate what suits the demand
             </motion.h1>
-            <div style={{ paddingTop: 30 }} className="pl-5 mx-auto max-w-xl">
+            <div className="mx-auto max-w-xl">
               <motion.div
-                className="mb-8 text-2xl text-indigo-200/65 font-semibold"
+                className="mb-8 text-2xl text-indigo-200/65 font-semibold text-center" // Center the text
                 initial={{ opacity: 0, y: 20 }} // Start hidden
                 animate={{ opacity: 1, y: 0 }} // Slide in and show
                 transition={{ duration: 0.3, delay: 0.6 }} // Adjust delay for synchronization
-              > 
-                <Typewriter
-                  text="Next Generation IoT Solutions for your usecase"
-                  cursorColor="#4F46E5" // Customize cursor color
-                  typeSpeed={100} // Speed of typing
-                  eraseSpeed={50} // Speed of erasing
-                  eraseDelay={2000} // Delay before erasing
-                  typingDelay={500}
-                  loop={true}
-                   // Delay before typing starts
-                />
+              >
+                Next Generation IoT Solutions for your use case
               </motion.div>
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={400}>
@@ -107,16 +102,15 @@ export default function HeroHome() {
             </div>
           </div>
           <div>
-            {particlesVisible && <SnowParticles />}
             <div className="relative z-10">
               <ParallaxTilt
-                tiltMaxAngleX={15}
-                tiltMaxAngleY={15}
+                tiltMaxAngleX={5}
+                tiltMaxAngleY={5}
                 perspective={2000}
                 style={{
                   transform: `rotate(${rotation}deg)`, // Apply rotation based on scroll
                   borderRadius: "15px",
-                  boxShadow: "0 10px 20px rgb(73, 82, 211)", // Blue shadow
+                  border: borderVisible ? "1px solid rgb(73, 82, 211)" : "none", // Conditionally apply border
                 }}
               >
                 <div>

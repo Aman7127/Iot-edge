@@ -1,0 +1,15 @@
+/* Add this to your HeroHome.css or a relevant CSS file */
+
+.vertical-timeline-element-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4A5568; /* Dark gray color */
+  }
+  
+  .vertical-timeline-element-description {
+    color: #4A5568; /* Dark gray color */
+  }
+  
+  .vertical-timeline-element {
+    border-left: 2px solid blue; /* Set the timeline line color to blue */
+  }

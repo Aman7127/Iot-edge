@@ -1,0 +1,28 @@
+.border-animation {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .border-animation::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Adjust as needed */
+    left: -5px; /* Adjust as needed */
+    right: -5px; /* Adjust as needed */
+    bottom: -5px; /* Adjust as needed */
+    border-radius: 10px; 
+    border: 2px solid transparent; /* Initial border */
+    background: linear-gradient(45deg, rgba(192, 192, 234, 0.5), rgba(99, 102, 241, 0.1), rgba(103, 104, 168, 0.5)); /* Glowing effect */
+    animation: glowing-border 1.5s infinite alternate; /* Animation */
+  }
+  
+  @keyframes glowing-border {
+    0% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.01); /* Slightly enlarge */
+    }
+  }

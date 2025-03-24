@@ -12,36 +12,28 @@ export default function Header() {
           {/* Site branding */}
           <div className="flex flex-1 items-center">
             <Logo />
-            <div className="pl-5">
+            <div className="pl-3 font-bold">
               IOT-EDGE
             </div>
           </div>
 
           {/* Navigation Links */}
-          <nav className="flex flex-1 items-center justify-center gap-6">
-            <ul className="flex items-center gap-6">
+          <nav className="flex flex-1 justify-end items-center pr-10">
+            <ul className="flex items-center gap-10">
               <li>
                 <Link
-                  href="/contactus"
-                  className="text-gray-300 hover:text-white transition"
+                  href="/aboutus"
+                  className="font-semibold text-gray-300 hover:text-white transition"
                 >
                   About Us
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/management"
-                  className="text-gray-300 hover:text-white transition"
+                  href="/services"
+                  className="font-semibold text-gray-300 hover:text-white transition"
                 >
-                  Management
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/research"
-                  className="text-gray-300 hover:text-white transition"
-                >
-                  Research
+                  Services
                 </Link>
               </li>
             </ul>

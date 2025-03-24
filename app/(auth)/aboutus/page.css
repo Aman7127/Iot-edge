@@ -1,0 +1,147 @@
+.timeline-container {
+    position: relative;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.color{
+    background-color: #493D9E;
+    
+}
+.timeline-item {
+    border-left: 2px solid #6f5efb;
+    padding-left: 20px;
+    position: relative;
+    margin: 20px 0;
+}
+.about-item{
+    border-left: 5px solid #2f1fc1;
+    padding-left: 20px;
+    position: relative;
+    margin: 10px 0;
+    
+}
+
+.timeline-year {
+    position: absolute;
+    left: -90px;
+    top: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: text-gray-800;
+    /* Background for the year */
+    border: 2px solid #6f5efb; /* Border around the year */
+    border-radius: 20; /* Make it circular */
+    width: 70px; /* Width of the circle */
+    height: 40px; /* Height of the circle */
+    display: flex; /* Center the text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.timeline-content {
+    background-color: rgba(90, 45, 213, 0.8);
+    border-radius: 8px;
+    padding: 15px;
+    margin-left: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -5; /* Position the dot */
+    top:-14;
+     /* Center the dot vertically */
+    width: 7px; /* Dot size */
+    height: 7px; /* Dot size */
+    background-color: #6f5efb; /* Dot color */
+    border-radius: 50%; /* Make it circular */
+}
+
+h3 {
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.gradient-line {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  /*border*/
+  .border-animation {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .border-animation::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Adjust as needed */
+    left: -5px; /* Adjust as needed */
+    right: -5px; /* Adjust as needed */
+    bottom: -5px; /* Adjust as needed */
+    border-radius: 10px; 
+    border: 2px solid transparent; /* Initial border */
+    background: linear-gradient(45deg, rgba(192, 192, 234, 0.5), rgba(99, 102, 241, 0.1), rgba(99, 102, 241, 0.5)); /* Glowing effect */
+    animation: glowing-border 1.5s infinite alternate; /* Animation */
+  }
+  
+  @keyframes glowing-border {
+    0% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.01); /* Slightly enlarge */
+    }
+  }
+
+  /* Add this to your page.css or relevant CSS file */
+.bg-gray-800 {
+    background-color: #2d3748; /* Dark background */
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem; /* Rounded corners */
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+  }
+  
+  .transition-transform {
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .list-disc {
+    list-style-type: disc; /* Bullet points */
+  }
+  
+  .list-inside {
+    padding-left: 1.5rem; /* Indent list items */
+  }
+  
+  .text-gray-300 {
+    color: #d1d5db; /* Light gray text */
+  }
+  

@@ -7,6 +7,7 @@ import WorflowImg01 from "@/public/images/workflow-01.png";
 import WorflowImg02 from "@/public/images/workflow-02.png";
 import WorflowImg03 from "@/public/images/workflow-03.png";
 import Spotlight from "@/components/spotlight";
+import "./workflow.css"
 
 export default function Workflows() {
   // Define animation variants for cards
@@ -42,7 +43,7 @@ export default function Workflows() {
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
             <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-indigo-200/50">
               <span className="inline-flex bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                Tailored Workflows
+                what we do
               </span>
             </div>
             <motion.h2
@@ -110,7 +111,7 @@ export default function Workflows() {
                   <div>
                     <span className="flex items-center justify-center text-2xl font-normal pt-10">
                       <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text font-bold text-transparent">
-                        Asset Tracking
+                        Asset Monitoring
                       </span>
                     </span>
                   </div>

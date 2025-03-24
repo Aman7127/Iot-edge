@@ -76,7 +76,7 @@ export default function Features() {
             </p>
           </div>
           {/* Top Cards */}
-          <div className="bg-black z-10 grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
+          <div className=" z-10 grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
             <motion.article
               variants={topCardVariants}
               initial="hidden"
@@ -98,7 +98,7 @@ export default function Features() {
                   />
                 </svg>
                 <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                  Live GPS 
+                  Real time monitoring
                 </h3>
                 <p className="text-indigo-200/65 pt-3">
                   Real-time tracking and monitoring for vehicles, improving efficiency, safety, and cost savings.											
@@ -124,7 +124,7 @@ export default function Features() {
                   <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
                 </svg>
                 <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                  Asset & Cargo
+                  Asset management
                 </h3>
                 <p className="text-indigo-200/65 pt-3">
                   Ensure the security and location of valuable assets and shipments worldwide.					
@@ -153,10 +153,10 @@ export default function Features() {
                   />
                 </svg>
                 <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                  Smart Solution
+                  Indoor tracking
                 </h3>
                 <p className="text-indigo-200/65 pt-3">
-                  Automation, remote monitoring, and AI-driven insights for various industries.					
+                n premises, floor movements of people or assets track. Unwanted movements management
                 </p>
               </a>
             </motion.article>
@@ -188,10 +188,10 @@ export default function Features() {
                   />
                 </svg>
                 <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                  Live GPS 
+                Work force monitoring
                 </h3>
                 <p className="text-indigo-200/65 pt-3">
-                  Real-time tracking and monitoring for vehicles, improving efficiency, safety, and cost savings.											
+                  Real-time tracking and monitoring for man power, improving efficiency and safety.											
                 </p>
               </a>
             </motion.article>
@@ -214,7 +214,7 @@ export default function Features() {
                   <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
                 </svg>
                 <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                  Asset & Cargo
+                  Sensor based monitoring
                 </h3>
                 <p className="text-indigo-200/65 pt-3">
                   Ensure the security and location of valuable assets and shipments worldwide.					
@@ -243,7 +243,7 @@ export default function Features() {
                   />
                 </svg>
                 <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                  Smart Solution
+                  Automation
                 </h3>
                 <p className="text-indigo-200/65 pt-3">
                   Automation, remote monitoring, and AI-driven insights for various industries.					
