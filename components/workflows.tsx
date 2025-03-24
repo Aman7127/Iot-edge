@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import SnowParticles from "@/components/snowparticle";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import WorflowImg01 from "@/public/images/workflow-01.png";
